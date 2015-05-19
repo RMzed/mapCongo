@@ -1,0 +1,308 @@
+footer,nav,article{
+display.block;
+}
+@font-face {
+    font-family: 'mapolice';
+    src: url('chalkduster-webfont.eot');
+    src: local('☺'), url('chalkduster-webfont.woff') format('woff'), url('chalkduster-webfont.ttf') format('truetype'), url('chalkduster-webfont.svg#webfontH0Mdi9o8') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#onglets
+{
+	
+        position : absolute;
+        border : 1px solid transparent;
+        padding : 0;
+        font : bold 11px Batang, arial, serif;
+        list-style-type : none;
+        padding-left: 20px;
+        margin-top : 0;
+        width : 430px;
+	
+}
+#onglets li
+{
+
+    float : left;
+    height : 21px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+	background-color: #428bca;
+    border-color: #357ebd;
+    margin : 2px 2px 0 2px !important;  /* Pour les navigateurs autre que IE */
+    margin : 1px 2px 0 2px;  /* Pour IE  */
+    border : 1px solid #428bca;
+}
+#onglets li.active
+{
+
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+#onglets a
+{
+    display : block;
+    color : black;
+    text-decoration : none;
+    padding : 4px;
+}
+#onglets a:hover
+{
+    background : #357ebd;
+}
+#menu
+{
+		background: #111;
+        border-radius: 0;
+        padding: 0.3em 0;
+        margin-bottom: 0;
+        border-bottom : 1px solid #9EA0A1;
+        padding-bottom : 25px;
+}
+body{
+	  background: url(back.png);
+	color: #fff;
+	font-family:verdana, geneva, sans-serif;
+}
+#conteneur{
+	width:1200px;
+	margin: 50px auto;
+}
+#conteneur h1{
+color:white;
+text-shadow:0 0 7px rgba(0,0,0,1);
+width: 60px;
+font-family: 'mapolice';
+
+padding-left:100px;
+-moz-transition-property: text-shadow padding;
+-moz-transition-duration:1s;
+}
+#conteneur h1:hover{
+		padding-left:108px;
+		padding-left:-3px;
+		text-shadow: 7px 7px 7px rgba( 0, 0, 0, 0.6);
+}
+#contenu{
+	position:relative;
+	-moz-box-shadow:20px 10px 10px rgba(50,50,50,0.5);
+	box-shadow:20px 10px 10px rgba(50,50,50,0.5);
+	-moz-border-radius:0 0px 30px 30px;
+	border-radius:0 0px 30px 30px;
+	height: 490px;
+	background-color:white;
+	clear:both;
+	
+}
+#contenu  .gauche{
+    height: 475px;
+    width:650px;
+    padding : 0 15px 15px 15px;
+    background-color: #595857; 
+    -moz-border-radius:0 0 0 30px;
+    border-radius:0 0 0 30px;
+    
+    font-size : 12px;
+    color: black;
+    
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+#contenu .droite{
+    height: 490px;
+    width: 475px;
+    
+
+    
+    -moz-border-radius:0 0px 30px 0;
+    border-radius:0 0px 30px 0;
+    
+    font-size : 36px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color:#FFF;
+    line-height:325px;
+    
+    position:absolute;
+    top:0;
+    left:675px;
+    
+}
+#ferme{
+    display:block;
+    width:20px;
+    height:20px;
+    background:url(images/bt.png) left top;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    -webkit-text-overflow:ellipsis;
+
+}
+#ferme:hover{
+    background:url(images/bt.png) right top;
+}
+#intro:target, #com:target{
+    color:#000000;
+    height:auto;
+    white-space:normal;
+    text-overflow:clip;
+    -moz-text-overflow:clip;
+    -webkit-text-overflow:clip;
+    -o-text-overflow:clip;
+}
+p:first-letter{
+    font-size:36px;
+    }
+p{
+    font-weight:400;
+    font-size: 15px;
+    color: black;
+}
+#imge{
+
+    -moz-border-radius:0 0px 30px 0;
+    border-radius:0 0px 30px 0;
+
+}
+#slideshow {
+    position: relative;
+    height: 459px;
+    width: 492px;
+    padding: 15px;
+    margin: 0 auto 2em;
+    border: 1px solid #ddd;
+    background: #FFF;
+    /* CSS3 effects */
+    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    -moz-border-radius:0 0px 30px 0;
+    border-radius:0 0px 30px 0;;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+ 
+/* avanced box-shadow
+ * tutorial @
+ * http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow 
+*/
+#slideshow:before,
+#slideshow:after {
+    position: absolute;
+    bottom:16px;
+    z-index: -10;
+    width: 50%;
+    height: 20px;
+    content: " ";
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow:before {
+    left:0;
+    transform: rotate(-4deg);
+}
+#slideshow:after {
+    right:0;
+    transform: rotate(4deg);
+}
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+    position:relative;
+    height: 459px;
+    width: 492px;
+    overflow: hidden;
+}
+    
+/* on prévoit un petit espace gris pour la timeline */
+#slideshow .container:after {
+    position:absolute;
+    bottom: 0; left:0;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: #999;
+}
+/* 
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+*/
+#slideshow .slider {
+    position: absolute;
+    left:0; top:0;
+    width: 400%;
+    height: 310px;
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+    position:relative;
+    display:inline-block;
+    padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#slideshow figure:after {
+    position: absolute;
+    display:block;
+    content: " ";
+    top:0; left:0;
+    width: 100%; height: 100%;
+    box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+#slideshow figcaption {
+    position:absolute;
+    left:0; right:0; bottom: 5px;
+    padding: 0px;
+    margin:0;
+    border-top: 1px solid rgb(225,225,225);
+    text-align:center;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    font-family: Georgia, Times, serif;
+    background: #fff;
+    background: rgba(255,255,255,0.2);
+    color: #555;
+    text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+}
+@keyframes slider {
+    0%, 20%, 100%   { left: 0 }
+    25%, 45%        { left: -100% }
+    50%, 70%        { left: -200% }
+}
+/* complétez le sélecteur : */
+#slideshow .slider {
+    /* ... avec la propriété animation */
+    animation: slider 32s infinite;
+}
+#timeline {
+    position: absolute;
+    background: #999;
+    bottom: 15px;
+    left: 15px;
+    height: 1px;
+    background: rgb(214,98,13);
+    background: rgba(214,98,13,.8);
+    width: 0;
+    /* fonction d'animation */
+    animation: timeliner 32s infinite;
+}
+@keyframes timeliner {
+    0%, 25%, 50%, 75%, 100% { width: 0;     }
+    20%, 45%, 70%, 90%      { width: 492px; }
+
+}
+@keyframes figcaptionner {
+    0%, 25%, 50%, 75%, 100%                     { bottom: -55px;    }
+    5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%       { bottom: 5px;      }
+}
+/* ajouter à l'élément : */
+#slideshow figcaption {
+    /* ... la propriété animation */
+    animation: figcaptionner 32s infinite;
+}
+<span id="sl_play" class="sl_command"></span>
+<span id="sl_pause" class="sl_command"></span>
+ 
+<span id="sl_i1" class="sl_command sl_i"></span>
+<span id="sl_i2" class="sl_command sl_i"></span>
+<span id="sl_i3" class="sl_command sl_i"></span>
